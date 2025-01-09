@@ -243,20 +243,35 @@ document.addEventListener('DOMContentLoaded', () => {
         let introUndEntrance = gsap.timeline();
         const introWords = intro.textContent.split(' ');
         intro.innerHTML = introWords.map((word) => {
-            if (word === 'Product') {
-                return `<span class='letter underlined easterEgg pm easter-pointer' emoji='🚀'>${word}</span>`
-            } else if (word === 'Manager,' && !winIsSmallerThan600) {
-                return `<span class='letter easterEgg easter-pointer' emoji='🚀'>${word}</span>`
-            } else if (word === 'Manager,' && winIsSmallerThan600) {
-                return `<span class='letter underlined easterEgg easter-pointer' emoji='🚀'>${word}</span>`
-            } else if (word === 'dev.') {
+            // For debugging
+            console.log("Current word:", word);  // This will help us see exact word matches
+            
+            if (word === "I'm") {
+                return `<span class='letter'>${word}</span>`
+            } else if (word === 'a') {
+                return `<span class='letter'>${word}</span>`
+            } else if (word === 'Developer,') {
                 return `<span class='letter underlined easterEgg dev easter-pointer' emoji='🧑‍💻'>${word}</span>`
-            } else if (word === 'innovation,') {
-                return `<span class='letter underlined easterEgg inno easter-pointer' emoji='💥'>${word}</span>`
-            } else if (word === 'tech,') {
+            } else if (word === 'passionate') {
+                return `<span class='letter'>${word}</span>`
+            } else if (word === 'in') {
+                return `<span class='letter'>${word}</span>`
+            } else if (word === 'problem') {
+                return `<span class='letter underlined easterEgg inno easter-pointer' emoji='💡'>${word}</span>`
+            } else if (word === 'solving,') {
+                return `<span class='letter easterEgg easter-pointer' emoji='💡'>${word}</span>`
+            } else if (word === 'tech') {
                 return `<span class='letter underlined easterEgg tech easter-pointer' emoji='🧑‍🔧'>${word}</span>`
+            } else if (word === 'and') {
+                return `<span class='letter'>${word}</span>`
             } else if (word === 'design') {
                 return `<span class='letter underlined easterEgg design easter-pointer' emoji='🎨'>${word}</span>`
+            } else if (word === 'with') {
+                return `<span class='letter'>${word}</span>`
+            } else if (word === 'Mobile') {
+                return `<span class='letter underlined easterEgg pm easter-pointer' emoji='📱'>${word}</span>`
+            } else if (word === 'Technologies.') {
+                return `<span class='letter easterEgg easter-pointer' emoji='📱'>${word}</span>`
             } else {
                 return `<span class='letter'>${word}</span>`
             }

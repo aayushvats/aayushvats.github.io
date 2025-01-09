@@ -256,12 +256,12 @@ a.hovered > span::before, #email.hovered::before {
 }
 
 /* hero section */
-.alan {
-    grid-column: 9/-1;
+.aayush {
+    grid-column: 4/-1;
     font-size: 9rem;
 }
 
-.bouteiller {
+.vats {
     grid-column: 2/-1;
     font-size: 9rem;
 }
@@ -648,4 +648,93 @@ a.hovered > span::before, #email.hovered::before {
     background: var(--unde-color);
     z-index: -1;
     transition: width 0.03s;
+}
+
+.project-title {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    color: var(--pri-color);
+}
+
+.company {
+    font-size: 0.9rem;
+    color: var(--ter-color);
+    margin: 0;
+}
+
+.work-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.date {
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+}
+
+.work-description {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .work-header {
+    grid-column: 1/-1;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+  }
+
+  .project-title {
+    margin-top: 2rem;
+    margin-bottom: 0.25rem;
+    color: var(--pri-color);
+  }
+
+  .company {
+    font-size: 0.9rem;
+    color: var(--ter-color);
+    margin: 0;
+    margin-bottom: 0.25rem;
+  }
+
+  .work-description {
+    grid-column: 1/-1;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+  #project > .work > h3,
+  #project > .work > p,
+  #project > .work > ul,
+  #project > .work > h4 {
+    grid-column: 1/-1;
+    text-align: left;
+    width: 100%;
+    padding-left: 1rem;
+  }
+
+  #project > .work > h3 {
+    margin-bottom: 0.25rem;
+  }
+
+  #project > .work > p {
+    margin-bottom: 2rem;
+  }
+
+  #project > .work > h4.project-title {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  #project > .work > ul {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  #project > .work > ul:last-child {
+    margin-top: 2rem;
+  }
 }
