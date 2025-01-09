@@ -1,0 +1,74 @@
+.animate-text, .animate-text-hc, .animate-title-hc {
+    clip-path: polygon(0 0, 100% 0, 100% 110%, 0% 110%);
+    display: inline-block; /* mandatory for multi line text */
+}
+
+.animate-pic {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    display: inline-block;
+    height: fit-content;
+    width: fit-content;
+}
+
+.animate-pic > span {
+    transform: translateY(100%);
+    display: inline-block;
+    visibility: hidden;
+}
+
+h2 span.animate-title-hc span.animated-letter {
+    display: inline-block;
+    transform: translateY(4.209rem);
+    visibility: hidden;
+}
+
+p.animate-text-hc span.animated-word,
+p span.animate-text-hc span.animated-word,
+li.animate-text-hc span.animated-word,
+ul.link-list li a span.animate-text-hc span.animated-word,
+ul li span.animate-text-hc span.animated-word {
+    display: inline-block;
+    transform: translateY(1rem); /* size of the text */
+    visibility: hidden; /* for avoiding flash effect */
+}
+
+h3 span.animate-text-hc span.animated-word, h3 span.secondary.animate-text-hc span.animated-word {
+    display: inline-block;
+    transform: translateY(3.157rem);
+    visibility: hidden;
+}
+
+h5 span.animate-text-hc span.animated-word {
+    display: inline-block;
+    transform: translateY(1.777rem);
+    visibility: hidden;
+}
+
+.letter {
+    display: inline-block;
+    transform: translateY(9rem);
+    visibility: hidden;
+}
+
+#loader {
+    height: 100dvh;
+    width: 100dvw;
+    background-color: var(--sec-color);
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+#grid-loader {
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.loader-col {
+    content: '';
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+    height: 0;
+    display: inline-block;
+}

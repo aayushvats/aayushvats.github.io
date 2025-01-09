@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Aayush Vats</title>
+  <meta name="description" content="Aayush Vats, an experienced Software Engineer with a background in development, passionate about product innovation, technology, and design. Based in Delhi, India. Available for new opportunities.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Aayush Vats - Your new PM!" />
+  <meta property="og:description" content="Aayush Vats, an experienced Software Engineer with a background in development, passionate about product innovation, technology, and design. Based in Delhi, India. Available for new opportunities." />
+  <meta property="og:image" content="https://aayushvats.me/pic.png" />
+  <meta property="og:url" content="https://aayushvats.me" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Aayush Vats - Your new PM!" />
+  <meta name="twitter:description" content="Aayush Vats, an experienced Software Engineer with a background in development, passionate about product innovation, technology, and design. Based in Delhi, India. Available for new opportunities." />
+  <meta name="twitter:image" content="https://aayushvats.me/pic.png" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebPage",
+      "name": "Aayush Vats - Your new Dev!",
+      "description": "Aayush Vats, an experienced Software Engineer with a background in development, passionate about product innovation, technology, and design. Based in Delhi, India. Available for new opportunities.",
+      "url": "https://aayushvats.me"
+    }
+  </script>
+
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./font.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./loader.css">
+  <link rel="stylesheet" href="./cursor.css">
+  <link rel="stylesheet" href="./lenis.css">
+  <link rel="stylesheet" href="./query.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
+
+</head>
+<body>
+
+<!-- noise effect -->
+<div id="noise"></div>
+
+<!-- background of the site -->
+<div class="container">
+  <div class="grid-container" id="bck">
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+  </div>
+</div>
+
+<!-- page loader -->
+<div id="loader">
+  <div class="container">
+    <div id="grid-loader" class="grid-container"></div>
+  </div>
+</div>
+
+<!-- page -->
+<div id="nav">
+  <div class="grid-container">
+    <p class="version easter-pointer" id="colors">2025:v1</p>
+    <p class="ava" id="availability">Available for a developer <br/>position starting </p>
+    <p class="pos">Based in Delhi, India</p>
+    <nav>
+      <p>
+        <a href="#project"><span>Work,</span></a>
+        <a href="#about"><span>About,</span></a>
+        <a href="#contact"><span>Contact</span></a>
+      </p>
+    </nav>
+  </div>
+</div>
+
+<script>
+  const availabilityElement = document.getElementById('availability');
+  const currentDate = new Date();
+  const monthNames = [
+    "jan", "feb", "mar", "apr", "may", "jun",
+    "jul", "aug", "sep", "oct", "nov", "dec"
+  ];
+  const currentMonth = monthNames[currentDate.getMonth()+1];
+  const currentYear = currentDate.getFullYear().toString().slice(-2);
+
+  availabilityElement.innerHTML += `${currentMonth} '${currentYear}.`;
+</script>
+
+<div id="nav-s">
+  <div class="nav-grid">
+    <h6 id="cross">close</h6>
+    <p id="version-s"><span>2025:v1</span></p>
+    <nav>
+      <h2>
+        <a class="link-s" href="#project"><span>Work,</span></a>
+        <a class="link-s" href="#about"><span>About,</span></a>
+        <a class="link-s" href="#contact"><span>Contact</span></a>
+      </h2>
+    </nav>
+  </div>
+</div>
+
+<div id="hero">
+  <div class="shadowNav">
+    <div class="grid-container">
+      <h6 id="menu" class="only-s">menu</h6>
+    </div>
+  </div>
+  <div class="grid-container" id="title">
+    <h2 id="name" class="aayush urbanist animate-text">Aayush</h2>
+    <h2 id="lastname" class="vats urbanist">Vats</h2>
+    <h5 id="intro" class="animate-text">I'm a <span class="underlined dev">Developer</span>, passionate in <span class="underlined">problem solving</span>, <span class="underlined">tech</span> and <span class="underlined">design</span> with keen interest in Mobile Technologies.</h5>
+  </div>
+
+  <div class="grid-container" id="bottom">
+    <p class="indic">scr<br/>olld<br/>own</p>
+    <p class="social">
+      <span>
+        <a href="https://www.linkedin.com/in/aayush-vats/" target="_blank" rel="noreferrer"><span>Linkedin,</span></a>
+        <a href="https://flowcv.com/resume/mgaauipf1g" target="_blank" rel="noreferrer"><span>Resume,</span></a>
+        <a href="https://github.com/aayushvats" target="_blank" rel="noreferrer"><span>Github</span></a>
+      </span>
+    </p>
+  </div>
+</div>
+
+<div id="project">
+  <div class="grid-container title">
+    <p><span class="animate-text-hc">// 01</span></p>
+    <h2><span class="animate-title-hc fix-s">Professional</span></h2>
+    <h2><span class="animate-title-hc fix-s">Experience</span></h2>
+  </div>
+
+  <div class="grid-container work">
+    <h3><span class="animate-text-hc">Software Developer Engineer, </span><span class="secondary animate-text-hc">Yamaha Motor Solutions</span></h3>
+    <p class="animate-text-hc">Feb 2023 - Present</p>
+
+    <h4 class="project-title animate-text-hc"># Stock Audit Tool (SAT)</h4>
+    <ul>
+      <li><span class="animate-text-hc">- Led the migration from NativeScript to Flutter, resulting in a 100% improvement in performance.</span></li>
+      <li><span class="animate-text-hc">- Implemented robust custom APIs in C# and integrated Microsoft OAuth for authentication.</span></li>
+      <li><span class="animate-text-hc">- Reduced app loading time by 60% through efficient state management and caching strategies.</span></li>
+    </ul>
+
+    <h4 class="project-title animate-text-hc"># Risk Management Tool</h4>
+    <ul>
+      <li><span class="animate-text-hc">- Developed mobile and web applications using Flutter for factory risk assessment.</span></li>
+      <li><span class="animate-text-hc">- Completed frontend development in 50% of allotted timeline through efficient project management.</span></li>
+      <li><span class="animate-text-hc">- Implemented real-time data synchronization reducing data inconsistency by 90%.</span></li>
+    </ul>
+
+    <h4 class="project-title animate-text-hc"># Driver Behavior Monitoring System</h4>
+    <ul>
+      <li><span class="animate-text-hc">- Created customer-centric application integrated with Yamaha Insurance using advanced sensors.</span></li>
+      <li><span class="animate-text-hc">- Utilized Kotlin & Swift for native processes, Python for event detection with 70% accuracy.</span></li>
+      <li><span class="animate-text-hc">- Implemented Flutter UI components resulting in consistent cross-platform experience.</span></li>
+    </ul>
+
+    <ul>
+      <li><span class="animate-text-hc">Duration: 1 year 2 months</span></li>
+      <li><span class="animate-text-hc">Team: 4 devs</span></li>
+      <li><span class="animate-text-hc">Skills: Flutter, C#, Kotlin, Swift, Python, OAuth</span></li>
+    </ul>
+  </div>
+
+  <div class="grid-container work">
+    <h3><span class="animate-text-hc">Other Work Experience</span></h3>
+    
+    <div class="work-header">
+      <h4 class="project-title animate-text-hc">User Experience Developer</h4>
+      <p class="company animate-text-hc">Coding Blocks | Intern</p>
+      <p class="company animate-text-hc">Apr 2022 - Jun 2022</p>
+    </div>
+    <!-- <p class="date animate-text-hc">Apr 2022 - Jun 2022</p> -->
+    <p class="work-description animate-text-hc">Enhanced page efficiency by 15% through JavaScript optimizations and modern animation techniques.</p>
+    
+    <div class="work-header">
+      <h4 class="project-title animate-text-hc">React Developer</h4>
+      <p class="company animate-text-hc">DRDO | Intern</p>
+      <p class="company animate-text-hc">Oct 2021 - Dec 2021</p>
+    </div>
+    <!-- <p class="date animate-text-hc">Oct 2021 - Dec 2021</p> -->
+    <p class="work-description animate-text-hc">Built internal platform with React.js, implementing drag-and-drop functionality and efficient local storage solutions.</p>
+    
+    <div class="work-header">
+      <h4 class="project-title animate-text-hc">Mobile Application Developer</h4>
+      <p class="company animate-text-hc">OffBeat | Intern</p>
+      <p class="company animate-text-hc">Nov 2020 - Jan 2021</p>
+    </div>
+    <!-- <p class="date animate-text-hc">Nov 2020 - Jan 2021</p> -->
+    <p class="work-description animate-text-hc">Led end-to-end development of quiz feature, increasing revenue by 15% through Firebase integration.</p>
+    
+    <div class="work-header">
+      <h4 class="project-title animate-text-hc">Mobile Application Developer</h4>
+      <p class="company animate-text-hc">HomeFlic Wegrow | Freelance</p>
+      <p class="company animate-text-hc">Oct 2020 - Dec 2020</p>
+    </div>
+    <!-- <p class="date animate-text-hc">Oct 2020 - Dec 2020 | Freelance, Remote</p> -->
+    <p class="work-description animate-text-hc">Developed Flutter-based apps with Firebase backend, achieving 30% revenue increase and improved performance.</p>
+  </div>
+</div>
+
+<div id="about">
+  <div class="grid-container title">
+    <p><span class="animate-text-hc">// 02</span></p>
+    <h2><span class="animate-title-hc">Who I am</span></h2>
+  </div>
+  <div class="grid-container content">
+    <div class="pic">
+      <div class="animate-pic">
+        <span>
+          <img src="pic-marged.png" alt="Aayush Vats self-portrait">
+        </span>
+      </div>
+      <p id="legend-h" class="animate-text-hc">A good mix between tech and product.</p>
+    </div>
+    <p id="legend-s" class="animate-text-hc">A good mix between tech and product.</p>
+    <p class="animate-text-hc">I'm a passionate Mobile Developer with a strong foundation in cross-platform and native development.</p>
+    <p class="animate-text-hc">With expertise in Flutter, Kotlin, and Swift, I bridge the gap between platform-specific excellence and cross-platform efficiency. This versatility allows me to choose the perfect tool for each project, whether it's native performance or rapid cross-platform deployment.</p>
+    <p class="animate-text-hc">I'm deeply fascinated by mobile technologies and love exploring the bleeding edge of app development. From experimenting with new Flutter packages to diving into platform-specific APIs, I'm always eager to push the boundaries of what's possible on mobile.</p>
+    <p class="animate-text-hc">Beyond pure development, I'm passionate about creating intuitive user experiences and smooth animations. I believe that great apps are a perfect blend of robust architecture and delightful interactions.</p>
+    <p class="animate-text-hc">In my projects, I strive to build solutions that not only meet technical requirements but also provide exceptional user experiences through clean code and thoughtful design patterns.</p>
+    <p class="animate-text-hc">When I'm not coding, you'll find me contributing to open-source Flutter packages, exploring new mobile design trends, or mentoring aspiring developers in the local tech community. I also enjoy staying active with regular workouts and gaming sessions to maintain a healthy work-life balance.</p>
+    <ul class="link-list">
+      <li><a href="https://www.linkedin.com/in/aayush-vats/" target="_blank" rel="noreferrer"><span class="animate-text-hc">🡭 You can found all my licenses & certifications on Linkedin.</span></a></li>
+    </ul>
+  </div>
+</div>
+
+<div id="sideProject">
+  <div class="grid-container title">
+    <p><span class="animate-text-hc">// 03</span></p>
+    <h2><span class="animate-title-hc fix-s">Side projects</span></h2>
+  </div>
+
+  <div class="grid-container">
+    <div class="spa sp">
+      <h5><span class="animate-text-hc">#1 Automated Driving Detection </span><span class="secondary animate-text-hc">[Personal Project]</span></h5>
+      <p class="animate-text-hc">Automatically records any trip you make in your car, while distinguishing and not working when in other vehicle.</p>
+      <ul>
+        <li><span class="animate-text-hc">- Distinguishing your vehicle from any other vehicles with Minew E8 asset tracking tags and Low Energy BT signals.</span></li>
+        <li><span class="animate-text-hc">- Incorporated Google Maps API to visually plot polylines and map markers with 80% accuracy.</span></li>
+        <li><span class="animate-text-hc">- Integrated Swift for CLLocationManager and BLE functionality using Minew SDK, with Kotlin handling Android SDK.</span></li>
+      </ul>
+      <ul class="link-list">
+        <li><a href="https://github.com/aayushvats/automated-driving-detection" target="_blank" rel="noreferrer"><span class="animate-text-hc">🡭 Link to the project</span></a></li>
+      </ul>
+    </div>
+
+    <div class="spb sp">
+      <h5><span class="animate-text-hc">#2 Gym Logger </span><span class="secondary animate-text-hc">[Personal Project]</span></h5>
+      <p class="animate-text-hc">Log your gym sessions to better visualise the progress, along with keeping track of remaining muscle groups in the week.</p>
+      <ul>
+        <li><span class="animate-text-hc">- User Interface using SwiftUI, featuring a custom human muscle map to visualize targeted muscles.</span></li>
+        <li><span class="animate-text-hc">- Utilized publicly available APIs from musclewiki.net for muscle and exercise data, with SQLite storage.</span></li>
+        <li><span class="animate-text-hc">- Integrated Charts library to plot progress over time for better insights.</span></li>
+      </ul>
+      <ul class="link-list">
+        <li><a href="https://github.com/aayushvats/gym-tracking" target="_blank" rel="noreferrer"><span class="animate-text-hc">🡭 Link to the project</span></a></li>
+      </ul>
+    </div>
+
+    <div class="spc sp">
+      <h5 class="animate-title-hc fix-s"># Other Projects</h5>
+      <ul class="link-list">
+        <li><a href="https://github.com/aayushvats/dmrc" target="_blank" rel="noreferrer"><span class="animate-text-hc">🡭 Delhi Metro Tracker - Real-time metro tracking app using DMRC Momentum App and SQLite.</span></a></li>
+        <li><a href="https://buditravel.com/" target="_blank" rel="noreferrer"><span class="animate-text-hc">🡭 Budi Travel - Flutter-based travel companion app with Stripe payment integration.</span></a></li>
+        <li><a href="https://github.com/aayushvats" target="_blank" rel="noreferrer"><span class="animate-text-hc">🡭 Clean Weather App - Minimalist weather app using Flutter, Figma and OpenWeather API.</span></a></li>
+        <li><a href="https://github.com/aayushvats" target="_blank" rel="noreferrer"><span class="animate-text-hc">🡭 AirPlay Receiver - Custom AirPlay receiver implementation for seamless iOS device streaming.</span></a></li>
+        <li><a href="https://github.com/aayushvats/media_control_widget" target="_blank" rel="noreferrer"><span class="animate-text-hc">🡭 Media Controller - Universal media control interface for cross-platform audio/video playback.</span></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="contact">
+  <div class="grid-container title">
+    <p><span class="animate-text-hc">// 04</span></p>
+    <h2><span class="animate-title-hc fix-s">Let's talk</span></h2>
+  </div>
+  <div class="grid-container">
+    <div id="email-container">
+      <p id="email-action-mobile" class="only-s">Hold to copy!</p>
+      <h3 id="email" toCopy="aayushvats@protonmail.com">
+        <span class="animate-text-hc">aayushvats</span>
+        <br/>
+        <span class="animate-text-hc">@protonmail.com</span>
+      </h3>
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+  <div class="grid-container">
+    <div id="grid-footer">
+      <div>
+        <p class="text-footer">
+          <a href="https://www.linkedin.com/in/aayush-vats/" target="_blank" rel="noreferrer"><span>Linkedin,</span></a>
+          <a href="https://flowcv.com/resume/mgaauipf1g" target="_blank" rel="noreferrer"><span>Resume,</span></a>
+          <a href="https://github.com/aayushvats" target="_blank" rel="noreferrer"><span>Github</span></a>
+        </p>
+      </div>
+      <div><p class="text-footer">Design & code by Aayush Vats</p></div>
+      <div><p class="text-footer">Phone: +91 9958679035</p></div>
+    </div>
+  </div>
+</div>
+
+<script id="vertexShader" type="x-shader/x-vertex">
+  uniform float time;
+  varying vec2 vUv;
+  varying vec3 vPosition;
+  uniform vec2 pixels;
+  float PI = 3.141592653589793238;
+  void main() {
+    vUv = uv;
+    gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+  }
+</script>
+<script id="fragmentShader" type="x-shader/x-fragment">
+  uniform float time;
+  uniform float progress;
+  uniform sampler2D uDataTexture;
+  uniform sampler2D uTexture;
+
+
+  uniform vec4 resolution;
+  varying vec2 vUv;
+  varying vec3 vPosition;
+  float PI = 3.141592653589793238;
+  void main()	{
+      vec2 newUV = (vUv - vec2(0.5))*resolution.zw + vec2(0.5);
+      vec4 color = texture2D(uTexture,newUV);
+      vec4 offset = texture2D(uDataTexture,vUv);
+      gl_FragColor = vec4(vUv,0.0,1.);
+      gl_FragColor = vec4(offset.r,0.,0.,1.);
+      gl_FragColor = color;
+      gl_FragColor = texture2D(uTexture,newUV - 0.02*offset.rg);
+      // gl_FragColor = offset;
+
+  }
+</script>
+
+<script src="https://unpkg.com/lenis@1.1.3/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.139.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+<script src="./script.min.js"></script>
+<script src="./easter.min.js"></script>
+<script src="./favicon.min.js"></script>
+<script src="./color.min.js"></script>
+</body>
+</html>

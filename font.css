@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+
+.urbanist {
+   font-family: "Urbanist", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 600; /* 100 to 900 */
+   font-style: normal;
+}
+
+html {
+    /* font size set in the query.css file */
+    /*font-family: "Playwrite DE Grund", cursive;*/
+    font-family: "Chivo Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400; /* 100 to 400 */
+    font-style: normal;
+}
+
+h1 {
+    font-size: 5.61rem;
+}
+h2 {
+    font-size: 4.209rem;
+}
+h3 {
+    font-size: 3.157rem;
+}
+h4 {
+    font-size: 2.369rem;
+}
+h5 {
+    font-size: 1.777rem;
+}
+h6 {
+    font-size: 1.333rem;
+}
+p, a {
+    font-size: 1rem;
+}
+small {
+    font-size: 0.75rem;
+}

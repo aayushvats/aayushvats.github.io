@@ -1,0 +1,168 @@
+/* FONT SIZE */
+html {
+    font-size: 16px;
+}
+
+@media (min-width: 1440px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1535px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+/* SMALL SCREEN CUSTOM */
+@media (min-width: 800px) and (max-width: 1170px) {
+    .grid-container {
+        margin: 0;
+        width: 100%;
+    }
+
+    .container {
+        margin: 0;
+        width: 100%;
+    }
+
+    #nav, #hero, #project, #about, #sideProject, #contact {
+        padding: 0 15px;
+    }
+
+    .pos {
+        grid-column: 7/9;
+    }
+
+    #nav > .grid-container > nav {
+        grid-column: 9/12;
+    }
+
+    .alan {
+        grid-column: 7/-1;
+    }
+}
+
+/* TABLET */
+@media (min-width: 800px) and (max-width: 1024px) {
+    #project .title h2,
+    #about .title h2,
+    #sideProject .title h2,
+    #contact .title h2,
+    #project .work h3,
+    #project .work p,
+    #project .work ul {
+        grid-column: 5/12;
+    }
+
+    #about .content > p {
+        grid-column: 7/2;
+    }
+
+    #sideProject .spa {
+        grid-column: 3/7;
+    }
+
+    #sideProject .spb {
+        grid-column: 8/12;
+    }
+
+}
+
+@media (min-width: 800px) and (max-width: 973px) {
+    #sideProject .spc {
+        grid-column: 3/12;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+    .only-s {
+        display: block;
+    }
+
+    html {
+        font-size: 14px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(10, 1fr);
+        margin: 0;
+        width: 100%;
+    }
+
+    .container {
+        margin: 0;
+        width: 100%;
+    }
+
+    #nav, .animate-pic > canvas {
+        display: none;
+    }
+
+    #name {
+        font-size: 5rem;
+        grid-column: 5/-1;
+    }
+
+    #lastname {
+        font-size: 5rem;
+        grid-column: 2/-1;
+    }
+
+    #email {
+        font-size: 2rem;
+    }
+
+    #footer {
+        height: min-content;
+    }
+
+    #project .title h2,
+    #about .title h2,
+    #sideProject .title h2,
+    #contact .title h2,
+    #project .work h3,
+    #project .work p,
+    #project .work ul,
+    #about .content > p,
+    #about .content > ul,
+    #sideProject .spa,
+    #sideProject .spb,
+    #sideProject .spc,
+    .title > p,
+    #email-container
+    {
+        grid-column: 2/10 !important;
+    }
+
+    #about >.content > .pic {
+        grid-column: 1/-1 !important;
+    }
+
+    .animate-pic, img {
+        width: 100%;
+    }
+
+    #legend-s {
+        display: block;
+        grid-column: 2/10;
+    }
+
+    #legend-h {
+        display: none;
+    }
+
+    #menu {
+        grid-column: 8/10;
+        width: auto;
+        text-align: right;
+        cursor: pointer;
+    }
+
+    #title > h5 {
+        grid-column: 2/9;
+    }
+}
+
