@@ -12,7 +12,7 @@ import { Container } from "@/components/layout/container";
 const links = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "https://blog.gaurshubham.com/", label: "Blog" },
+  // { href: "https://blog.gaurshubham.com/", label: "Blog" },
   { href: "/work", label: "Work" },
 ];
 

@@ -12,6 +12,7 @@ import {
   Facebook,
   Rss,
   NotebookPen,
+  Code,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -19,37 +20,25 @@ const socialLinks = [
   {
     name: "GitHub",
     icon: Github,
-    href: "https://github.com/shubhamessier",
+    href: "https://github.com/aayushvats/",
     color: "hover:text-[#333]",
   },
   {
     name: "LinkedIn",
     icon: Linkedin,
-    href: "https://linkedin.com/in/shubhamgaur10",
+    href: "https://linkedin.com/in/aayush-vats/",
     color: "hover:text-[#0077b5]",
   },
   {
-    name: "Twitter",
-    icon: Twitter,
-    href: "https://x.com/0xshubhamgaur",
+    name: "Leetcode",
+    icon: Code,
+    href: "https://leetcode.com/aayushvats/",
     color: "hover:text-[#1da1f2]",
-  },
-  {
-    name: "Blog",
-    icon: NotebookPen,
-    href: "https://blog.gaurshubham.com/",
-    color: "hover:text-[#333]",
-  },
-  {
-    name: "RSS",
-    icon: Rss,
-    href: "https://blog.gaurshubham.com/rss",
-    color: "hover:text-[#ff6600]",
   },
   {
     name: "Instagram",
     icon: Instagram,
-    href: "https://instagram.com/shubham.git",
+    href: "https://instagram.com/rick.313x/",
     color: "hover:text-[#e4405f]",
   },
 ];
