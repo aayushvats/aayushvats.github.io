@@ -23,9 +23,9 @@ export function HeroSection() {
             I'm already exploring it.
           </p>
           <p>
-            I strongly belive in the philosophy, &quot;An idiot admires complexity, a genius admires
-            simplicity&quot;, said that, I also moonlight as a designer, because making things look good should
-            never be an afterthought. I believe great design is invisible, until it&apos;s missing.
+            I strongly believe in the philosophy, &quot;An idiot admires complexity, a genius admires
+            simplicity&quot;. I also moonlight as a designer, because making things look good should
+            never be an afterthought. Great design is invisible, until it&apos;s missing.
           </p>
           <p>
             When I&apos;m not debugging or chasing down rogue pixels, you&apos;ll probably find me sketching.
@@ -65,7 +65,7 @@ export function HeroSection() {
             className="group text-base sm:text-lg"
           >
             <Link
-              href="https://drive.google.com/file/d/1VJpCLHLKdzpM9QcrSLR-nvXM3B6jkhYH/view?usp=sharing"
+              href="https://drive.google.com/file/d/1RjjtpFOU4q2AwxChJ2uwlITxmFc_1kny/view?usp=sharing"
               rel="noopener noreferrer"
             >
               <p>Resume</p>
