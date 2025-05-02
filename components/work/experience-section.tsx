@@ -11,7 +11,7 @@ export function ExperienceSection() {
 
   return (
     <section className="space-y-5">
-      <h1 className="text-[22px] font-medium pb-5">Experience</h1>
+      <h2 className="text-[28px] font-medium">Experience</h2>
       <motion.div 
         className="space-y-8 relative"
         animate={{ 

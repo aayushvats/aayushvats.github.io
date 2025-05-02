@@ -39,6 +39,8 @@ export const skillCategories: SkillCategory[] = [
       "Android Studio",
       "Webstorm",
       "VS Code",
+      "Azure DevOps",
+      "Firebase",
       "Vim",
       "Emacs"
     ],
