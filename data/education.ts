@@ -7,14 +7,15 @@ export interface Education {
 
 export const education: Education[] = [
   {
-    degree: "B.E. Electronics & Communication Engg.",
-    school: "MBM University, Jodhpur",
-    duration: "2021 – 2025",
+    degree: "B.Tech in Computer Science and Engineering",
+    school: "GGSIPU, Delhi",
+    duration: "2019 – 2023",
+    grade: "9.0 GPA",
   },
   {
     degree: "Physics, Chemistry, Mathematics",
-    school: "G.S. jangid Memorial Public School, Jodhpur",
-    duration: "2019 – 2021",
-    grade: "71.6%",
+    school: "Apeejay School, Pitampura",
+    duration: "2018 – 2019",
+    grade: "91.6%",
   },
 ];
