@@ -36,6 +36,12 @@ const socialLinks = [
     color: "hover:text-[#1da1f2]",
   },
   {
+    name: "Email",
+    icon: Mail,
+    href: "mailto:aayushvats@protonmail.com",
+    color: "hover:text-[#e4405f]",
+  },
+  {
     name: "Instagram",
     icon: Instagram,
     href: "https://instagram.com/rick.313x/",

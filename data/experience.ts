@@ -43,7 +43,7 @@ export const experiences: Experience[] = [
     description: "Led the implementation of a new feature in the existing mobile application. Utilised React Native, Kotlin, Flutter and Firebase. Integrated Google OAuth. Unfortuantely, the company shut down a few months later because of lack of funding.",
   },
   {
-    company: "HomeFLic WeGrow",
+    company: "HomeFlic WeGrow",
     companyUrl: "https://www.linkedin.com/company/homeflic-wegrow/?originalSubdomain=in",
     role: "Freelance Software Developer",
     duration: "Sep 2020 - Dec 2020",

@@ -1,58 +1,40 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { images, books } from "@/data/about";
+import { images, songs as songs } from "@/data/about";
 import { Carousel } from "@/components/carousel";
 import { MainLayout } from "@/components/layout/main-layout";
 import { Section } from "@/components/layout/section";
 import { Timeline } from "@/components/about/timeline";
-import { ReadingList } from "@/components/about/reading-list";
+import { Playlist } from "@/components/about/reading-list";
 
 const timelineEvents = [
-  { year: "2003", description: "Born in Jodhpur, Rajasthan, India." },
   {
-    year: "2010",
-    description: "Used PC for the first time, instant crush.",
-  },
-  { year: "2015", description: "Started using QBasic in school." },
-  {
-    year: "2021",
-    description: "Started Studying Engineering, MBM University Jodhpur.",
+    year: "2001", description: "Born in New Delhi, India."
   },
   {
-    year: "2022",
-    description:
-      "Used Linux Kernel for the first time, instantly became a cult follower.",
+    year: "2011", description: "Started using QBasic and PC Logo in school.",
   },
   {
-    year: "2023",
-
-    description:
-      "Interned at NIT Trichy, Studied Cybersecurity, Reinforcement Learning and dove deeper into AI.",
+    year: "2015", description: "Got into HTML/CSS and little bit JS."
   },
   {
-    year: "2024",
-    description:
-      "Rebuilt my life after a setback from last year, Joined a early startup . Moved to Jaipur, India.",
+    year: "2019", description: "Joined BPIT, Delhi for B.Tech in Computer Science.",
   },
   {
-    year: "2024",
-    description:
-      "Left the startup, Joined a US Based Company as a Software Engineer.",
+    year: "2019", description: "Used Linux Kernel for the first time, instantly became a cult follower.",
   },
   {
-    year: "2024",
-    description: "Left the company to work on my own saas idea, Meetster.",
+    year: "2020", description: "Started Freelancing, and built my first mobile app.",
   },
   {
-    year: "2025",
-    description:
-      "Started building Astroyapper.com, but left it after some time due to difference of vision with the co-founder.",
+    year: "2021", description: "Began designing along with contantly interning at multiple startups.",
   },
   {
-    year: "2025",
-    description:
-      "Joined a Startup as a Software Engineer. Moved to Banglore, India",
+    year: "2022", description: "Left all startups to focus on oncoming placement season.",
+  },
+  {
+    year: "2023", description: "Cracked multiple interviews and joined Yamaha Motor India as a Software Engineer.",
   },
 ];
 
@@ -84,12 +66,8 @@ export default function AboutPage() {
                 viewport={{ once: true, amount: 0.1 }}
               >
                 <p>
-                  <b>Who are you anyways?</b> Good Question, I&apos;m Shubham,
-                  here&apos;s my story. Since my childhood, I was fascinated by
-                  computers and technology. At 10, I was curious enough to learn
-                  PowerPoint on my own. As a result, I spent years of my
-                  childhood learning about them, fixing my computer, taking
-                  apart hard drives.
+                  <b>Who are you anyways?</b> Good Question, I&apos;m Aayush,
+                  here&apos;s a bit of my story.
                 </p>
               </motion.div>
 
@@ -100,9 +78,11 @@ export default function AboutPage() {
                 viewport={{ once: true, amount: 0.1 }}
               >
                 <p>
-                  I&apos;ve spent countless hours playing Condition Zero, Total
-                  Overdose, Grand Theft Auto, Need For Speed etc. I first learnt
-                  programming using QBasic during my school, thanks to Windows
+                  I grew up in the early 2000s, right into the world already
+                  buzzing software devs and big tech companies. Since then I&apos;ve
+                  been fascinated by technology, curious about how things work.
+                  As a result, I spent years of my childhood learning about them,
+                  fixing my computer, taking and apart hard drives. Thanks to Windows
                   XP & computer viruses I learnt the habit of fixing errors,
                   early in life.
                 </p>
@@ -115,16 +95,10 @@ export default function AboutPage() {
                 viewport={{ once: true, amount: 0.1 }}
               >
                 <p>
-                  Other than programming I enjoy astrophotography, a hobby I
-                  picked up casually exploring my phone camera&apos;s
-                  capabilities, I&apos;ve captured different shots of moons,
-                  stars & nebulas. During my college, I started writing my own
-                  blog,{" "}
-                  <a href="https://blog.gaurshubham.com/">
-                    <span className="text-primary">The Zero Days of Life</span>
-                  </a>{" "}
-                  where I write about my daily life, my failures, challenges
-                  etc.
+                  I got into programming early in life with things like QBasic, PC Logo 
+                  and Borland C++. I went from flashing whatever new ROM was cool then,
+                  onto my old Android, to building a UI from scratch because the existing
+                  one looked too boring.
                 </p>
               </motion.div>
 
@@ -135,14 +109,13 @@ export default function AboutPage() {
                 viewport={{ once: true, amount: 0.1 }}
               >
                 <p>
-                  My work is a reflection of my inspirations. I have been very
-                  much inspired by fictional characters, music & programmers,
-                  people such as Iron Man (for putting his passion for
-                  technology above everything else), Rocky Balboa (for never
-                  giving up), Kevin Mitnick (for being my hacker inspiration),
-                  Linus Torvalds (for his beautiful contribution to open
-                  source), Karate Kid (for teaching me wax on, wax off!), Pink
-                  Floyd (for every one of their life altering hits).
+                  Programming isn&apos;t just a subject, it&apos;s like a superpower.
+                  Why search for a tool when you can build the toolbox? My work has 
+                  always been a reflection of my interests and needs. From making a weather
+                  application because my phone didn&apos;t come with one and other free
+                  alternatives looked ugly, to building complex system to screenshare from 
+                  my Mac to my Galaxy, I almost exclusively build things which solve
+                  real problems.
                 </p>
               </motion.div>
 
@@ -153,10 +126,10 @@ export default function AboutPage() {
                 viewport={{ once: true, amount: 0.1 }}
               >
                 <p>
-                  I don&apos;t like using properitary softwares, I like to use
-                  free and open source softwares. I like to work with open
-                  source softwares, and I avoid getting into the walled garden
-                  of ecosystems.
+                  In a world where everything is an app, I find myself wearing two hats. At
+                  times, I&apos;m a consumer, navigating through the App Store. But more
+                  often than not, I&apos;m a creator, ideating, designing and developing the
+                  apps that I use.
                 </p>
               </motion.div>
             </div>
@@ -169,7 +142,7 @@ export default function AboutPage() {
             transition={{ duration: 0.1, ease: "easeOut", delay: 0.1 }}
           >
             <h2 className="text-[22px] font-medium pb-5 font-medium">
-              I like living alone.
+              The Work I Do.
             </h2>
           </motion.div>
           <motion.div
@@ -180,28 +153,60 @@ export default function AboutPage() {
             className="space-y-6 sm:space-y-8"
           >
             <p>
-              I do like socialising and meeting new people constantly, but
-              sometimes I just live alone, process my thoughts, work on the
-              things I want to do, rather than just follow where the group goes,
-              I do hate larger groups where the decision making is made by the
-              alpha of the group. I like working with small sets of people, and
-              I enjoy the prospect of knowing everyone closely. The rules change
-              when I travel, I try to strike up conversations with new people,
-              make friends and go along.
+              Right now, I&apos;m working as a Software Developer at Yamaha Motor
+              India, where I&apos;ve been a part of 3 different teams spread across
+              the world. Each of which taught me more than the previous. I&apos;ve
+              led the development of smart, sensor-powered mobile applications.
+              We&apos;re talking real-time driving detection, complex ployline
+              algorithms, and even trip tracking natively using Bluetooth and GPS.
+              I have written native code in Swift and Kotlin, wrangled Python event
+              logics, and even migrated entire applications to Flutter for better performance.
             </p>
             <p>
-              Apart from this, to really become great at something I need to
-              spend a lot of time alone on it, to gain that unwavering focus is
-              important for me. People play a huge role in that, and through
-              time I have realised a one good friend is enough to live a
-              meaningful life, everything good above that is a luxury. I try to
-              make my days even by having a evening
-              <span className="text-primary"> chai</span> with my friend outside
-              my home where we discuss about our thoughts and ideas.
+              Before Yamaha, I have been an intern in multiple startups and organizations,
+              where I worked on a variety of projects. I&apos;ve worked at DRDO, Hack2Skill,
+              Coding Blocks, and other startups, where I was involved in everything from
+              designing to developing end-to-end applications.
             </p>
           </motion.div>
         </Section>
 
+        <Section>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.1, ease: "easeOut", delay: 0.1 }}
+          >
+            <h2 className="text-[22px] font-medium pb-5 font-medium">
+              The Person Behind the Code.
+            </h2>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="space-y-6 sm:space-y-8"
+            transition={{ duration: 0.1, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.1 }}
+          >
+            <p>
+              Development isn&apos;t the only thing that drives me. I seldom freelance
+              as a designer. I believe that design should whisper, not shout. I love apps
+              that feel obvious in hindsight — the kind that makes you think, &quot;of course,
+              this is how it should work.&quot;. When I&apos;m not coding, I&apos;m sketching,
+            </p>
+          </motion.div>
+        </Section>
+
+        <Section>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.1, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.1 }}
+          >
+            <Playlist songs={songs} />
+          </motion.div>
+        </Section>
         <Section>
           <motion.div
             initial={{ opacity: 0 }}
@@ -215,7 +220,6 @@ export default function AboutPage() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="space-y-6 sm:space-y-8"
             transition={{ duration: 0.1, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.1 }}
           >
@@ -226,46 +230,6 @@ export default function AboutPage() {
               having to think about the constraints. The core of humanly life
               has always been the pursuit of &quot;the more&quot; and I
               don&apos;t find myself very different here.
-            </p>
-          </motion.div>
-        </Section>
-
-        <Section>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.1, ease: "easeOut" }}
-            viewport={{ once: true, amount: 0.1 }}
-          >
-            <ReadingList books={books} />
-          </motion.div>
-        </Section>
-        <Section>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.1, ease: "easeOut", delay: 0.1 }}
-          >
-            <h2 className="text-[22px] font-medium pb-5 font-medium">
-              Technology.
-            </h2>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.1, ease: "easeOut" }}
-            viewport={{ once: true, amount: 0.1 }}
-          >
-            <p>
-              As vague it may sound to you, but there&apos;s a very specific
-              reason why I&apos;m putting it here, As a child growing up in
-              2000s, Science and Technology were noble pursuits and something
-              that provided a deep meaning to life, the ability to understand
-              the universe and see the universe in it&apos;s true form has
-              always been fascinating. Technology provided a way for me to mask
-              my identity and be cool, the understanding of complex systems,
-              devices, protocols etc. has made me interested to try out
-              different things and make something useful out of it.
             </p>
           </motion.div>
         </Section>
@@ -301,22 +265,12 @@ export default function AboutPage() {
             <p>
               {" "}
               <b>Wait, What? </b>
-              The answer is simple, I don&apos;t like limiting myself to
-              specific outcomes and possibilities and settle early in life.
-              I&apos;ve always wanted to work on different technologies, learn
-              something new every day, changing cities, learning about cultures,
-              people and living life to it&apos;s meaning to me which is{" "}
-              <span className="text-primary">&quot;change&quot;</span>.
-              It&apos;s better to mould life, see its true meaning, and live up
-              to it, than to accept what&apos;s given by default.
-            </p>
-            <p>
-              The core of a man&apos;s spirit comes from new experiences, I live
-              by this thought, and I try to implement it in my life. By trying
-              to go beyond my comfort zone and to do things without delving into
-              the spiral of thoughts and possibilites. At a time, getting stable
-              would be necessary until that let me see life in it&apos;s true
-              colors.
+              I don't chase stability, not because I don&apos;t value it, but because
+              I&apos;d rather be uncomfortable than unfulfilled. I&apos;ve worked in
+              startups, freelanced, shipped products, scrapped ideas, and walked away
+              from what didn&apos;t align with my vision. It&apos;s part of the process.
+              Change is the constant I&apos;ve come to admire — new tech, new cities, new people.
+              That&apos;s how entropy, or what I call freedom to create, increases.
             </p>
           </motion.div>
         </Section>
@@ -340,7 +294,7 @@ export default function AboutPage() {
               <b>Heya Stranger, </b>I love talking to people, and I write back
               to every mail. you can write me{" "}
               <a
-                href="mailto:shubham.gaur7116@gmail.com"
+                href="mailto:aayushvats@protonmail.com"
                 className="text-primary"
               >
                 here
