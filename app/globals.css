@@ -24,6 +24,10 @@
     --input: 0 0% 89.8%;
     --ring: 0 0% 3.9%;
     --radius: 0.5rem;
+
+    /* Add these new custom properties for the gradient effect */
+    --experience-gradient-start: hsla(0, 0%, 100%, 0);
+    --experience-gradient-end: hsla(0, 0%, 100%, 1);
   }
 
   .dark {
@@ -46,6 +50,10 @@
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
+
+    /* Add dark mode gradient variables */
+    --experience-gradient-start: hsla(240, 10%, 3.9%, 0);
+    --experience-gradient-end: hsla(240, 10%, 3.9%, 1);
   }
 
   * {
