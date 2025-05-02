@@ -7,6 +7,7 @@ import { SkillsSection } from "@/components/work/skills-section";
 import { ProjectSection } from "@/components/work/project-section";
 import { AchievementSection } from "@/components/work/achievement-section";
 import { MainLayout } from "@/components/layout/main-layout";
+import { Gallery } from "@/components/about/gallery";
 
 export default function WorkPage() {
   return (
@@ -21,7 +22,7 @@ export default function WorkPage() {
         <EducationSection />
         <SkillsSection />
         <ProjectSection />
-        <AchievementSection />
+        {/* <AchievementSection /> */}
       </motion.div>
     </MainLayout>
   );
